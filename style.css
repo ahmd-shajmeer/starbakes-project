@@ -1,0 +1,205 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+#logo{
+    width: 140px;
+    height: 90px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.list{
+    display: inline;
+    list-style: none;
+    margin: 10px 20px;
+}
+.links{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.hover-icon{
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+nav .hover-icon:hover .hidden-list{
+    display: block;
+}
+
+.banner-img{
+    width: 99%;
+    height: 500px;
+    margin-left: 10px;
+    background-image: url(https://hips.hearstapps.com/del.h-cdn.co/assets/16/38/1600x800/landscape-1474645974-cakes-group-193.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#heading2{
+    font-size: 150px;
+    color: black;
+    border: 5px solid black;
+    background-color: rgb(255, 255, 255,0.2);
+}
+#slogan{
+    font-size: 30px;
+    color: white;
+}
+.about{
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+}
+.body-headings{
+    text-align: center;
+}
+.about-content{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-img{
+    width: auto;
+    height: 250px;
+    border: 5px solid black;
+}
+.button{
+    width: 130px;
+    height: 40px;
+    margin-top: 5px;
+    color: brown;
+    background-color: white;
+    border: 2px solid brown;
+    transition: all 400ms;
+}
+.button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);;
+}
+.visit{
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+}
+.visit-content{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.visit-img{
+    width: auto;
+    height: 250px;
+    border: 5px solid black;
+}
+.shop{
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+}
+.shop-content{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.shop-img{
+    width: auto;
+    height: 250px;
+    border: 5px solid black;
+}
+.contact{
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon-div{
+    display: flex;
+    margin: 0px 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    margin: 0px 10px;
+}
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    #logo {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .list {
+        margin: 10px 0;
+    }
+
+    ul {
+        display: none;
+        padding-left: 0;
+    }
+    .hover-icon{
+        display: inline;
+        position: absolute;
+        top: 40px;
+        left: 600px;
+    }
+    .hidden-list {
+        position: absolute;
+        list-style-type: none;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        display: none;
+        top: 30px;
+        left: 0;
+    }
+
+ /* Media query for screens with a max-width of 500px */
+    .banner-img {
+        width: 125%;
+        height: auto; /* Adjust the height to fit content */
+        padding: 20px; /* Add some padding for better readability */
+        text-align: center;
+        align-items: center; /* Center align text */
+    }
+
+    #heading2 {
+        font-size: 80px; /* Reduce the font size for smaller screens */
+        border: 3px solid black; /* Adjust the border thickness */
+    }
+
+    #slogan {
+        font-size: 20px; /* Reduce the font size for smaller screens */
+    }
+
+
+}
+
+ 
+
